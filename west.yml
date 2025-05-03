@@ -1,16 +1,22 @@
 manifest:
-  version: 0.14
-
-  remotes:
-    - name: zephyr
-      url-base: https://github.com/zephyrproject-rtos
 
   projects:
     - name: zephyr
-      remote: zephyr
-      revision: main
+      url: https://github.com/zephyrproject-rtos/zephyr
+      revision: v4.0.0
+      path: zephyr
+      west-commands: scripts/west-commands.yml
+      import: 
+        name-allowlist:
+          - cmsis
+          - hal_stm32
+
+    - name: Tarzan 
+      url: https://github.com/dagaayush1205/Tarzan
+      revision: stepper-implementation
+      path: modules/lib/Tarzan
       import: true
 
-  self:
-    path: agriprobe-biobox
 
+  self:
+    path: Diglet
