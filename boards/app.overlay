@@ -6,7 +6,7 @@
     stepper_motor: stepper-motor {
         compatible = "stepper-motor";
         status = "okay";
-        dir-gpios = <&gpiob 7 GPIO_ACTIVE_HIGH>;
-        step-gpios = <&gpioc 0 GPIO_ACTIVE_HIGH>;
+        dir-gpios = <&gpiob 7 GPIO_ACTIVE_LOW>;
+        step-gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
     };
 };
