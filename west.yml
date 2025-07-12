@@ -10,13 +10,5 @@ manifest:
         name-allowlist:
           - cmsis
           - hal_stm32
-
-    - name: Tarzan 
-      url: https://github.com/dagaayush1205/Tarzan
-      revision: stepper-implementation
-      path: modules/lib/Tarzan
-      import: true
-
-
   self:
     path: Diglet
